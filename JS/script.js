@@ -4,7 +4,7 @@ const buzzWord = document.getElementsByClassName("facts")[0];
 const apiURL = "https://corporatebs-generator.sameerkumar.website/";
 
 
-// Getting the data from API using a function and promise was used here
+// Getting the data from API using a function with new promise.
 function randomData() {
   return new Promise((resolve, reject) => {
     fetch(apiURL)
@@ -24,7 +24,7 @@ function randomData() {
   });
 }
 
-//Calling the data using addEventlistener to browser window
+//addEventlistener
 btnElement.addEventListener("click", function () {
     randomData();
 });
